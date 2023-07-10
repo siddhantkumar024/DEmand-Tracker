@@ -1,0 +1,160 @@
+body{
+    background-color:lightgrey;
+}
+.navi{
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 20px;
+    
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    gap: 1000px;
+    list-style-type:none;
+    
+    
+
+}
+
+.navi-link{
+    color: rgb(15, 70, 189);
+    border: 3px solid white;
+    padding: 0px 20px;
+    gap: 200px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 0.25rem;
+    border: 1.5px solid grey;
+    background-color: lightblue;
+}
+
+/* Nav ka hai upper  */
+
+.abaddform{
+    text-align: center;
+    margin: 50px;
+   
+}
+
+.addform{
+    
+    border-style: solid;
+    height: 100%;
+    margin: auto;
+    width: 30%;
+    border: 3px solid green;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: lightsalmon;
+}
+
+.formgroup{
+    display: flex;
+    border-bottom: 5px;
+    border-top: 5px;
+    margin: 5px;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+/* upper form ka h*/
+
+
+.jumbotron{
+    text-align: center;
+}
+
+.label{
+    display: grid;
+    grid-template-columns: 3% 8% 11% 13% 8% 11% 9.5% 11% 5% 5% ;
+    gap: 18px;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    margin: auto;
+    width: 90%;
+    padding-left: 20px;
+    overflow: hidden;
+    border: 3px solid black;   
+    justify-content: center;
+    
+}
+
+
+/*.data{
+    display: grid;
+    grid-template-columns: 3% 5% 8% 10% 5% 8% 6.5% 8% 5% 5%;
+    gap: 10px;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    margin: 10px auto;
+    width: 90%;
+    padding-left: 60px;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    border: 3px solid black;    
+} */
+.data{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 3% 8% 11% 13% 8% 11% 9.5% 11% 5% 5%  ;
+    gap: 18px;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    margin: 10px auto;
+    width: 90%;
+    padding-left: 30px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: hidden;
+    
+}
+.em2{
+    border: 3px solid black;
+    overflow-x: hidden;
+    padding-left: 2px;
+    text-align: center;
+    background-color: lightskyblue;
+
+}
+p{
+    margin-top: 10px;
+}
+a.btn.btn-secondary{
+    height: 41.6px;
+     margin: auto;
+    
+}
+.don{
+    height: 52.6px;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 0.25rem;
+    
+}
+.input{
+    height: 41.6px;
+    margin: auto;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  border-radius: 0.25rem;
+  background-color:blue;
+  font-size: 16px;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+    
+}
+.don :hover {
+    background-color: red;
+}

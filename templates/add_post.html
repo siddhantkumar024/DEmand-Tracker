@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="abaddform">
+<p> Please Fill below field and click Add</p>
+
+<div class="addform">
+   
+       <form class="formgroup" method="POST">
+       {{ form.hidden_tag() }}
+        
+       <div class="formgroup">
+        {{ form.Slno.label(class="formgroup-mod") }}
+        {{ form.Slno() }}
+        </div>
+    
+       <div class="formgroup">
+       {{ form.Demand_Id.label(class="formgroup-mod") }}
+       {{ form.Demand_Id() }}
+       </div>
+       <div class="formgroup">
+       {{ form.L5_Manager.label(class="formgroup-mod") }}
+       {{ form.L5_Manager() }}
+       </div>
+       <div class="formgroup">
+        {{ form.Skill_required.label(class="formgroup-mod") }}
+        {{ form.Skill_required() }}
+        </div>
+        <div class="formgroup">
+            {{ form.Experience.label(class="formgroup-mod") }}
+            {{ form.Experience() }}
+        </div>
+        <div class="formgroup">
+            {{ form.Profile_shared.label(class="formgroup-mod") }}
+            {{ form.Profile_shared() }}
+        </div>
+        <div class="formgroup">
+            {{ form.Comments.label(class="formgroup-mod") }}
+            {{ form.Comments() }}
+        </div>
+        <div  class="formgroup">
+            {{ form.Demand_status.label(class="formgroup-mod") }}
+            {{ form.Demand_status() }}
+        </div>
+             <div class="formgroup">
+           {{ form.submit() }}
+       </div>
+    </form>
+
+</div>
+
+</div>
+
+<!--update from here 6 july-->
+
+    
+
+{% endblock content%}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+  <div class="jumbotron">
+      <h1 > Demand Tracker </h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere expedita consequuntur eum! Amet, velit quidem asperiores assumenda vitae animi cum, omnis veniam quo qui quibusdam veritatis accusamus nam perferendis odit.</p>
+      <p> Just click on <strong>Add New</strong> to add New record </p>
+      
+    </div>
+  
+
+
+          <div  class="label">
+          <p >{{ form.Slno.label() }}</p>
+          <p>{{ form.Demand_Id.label() }}</p>
+          <p>{{ form.L5_Manager.label() }}</p>
+          <p>{{ form.Skill_required.label() }}</p>
+          <p>{{ form.Experience.label() }}</p>
+          <p>{{ form.Profile_shared.label() }}</p>
+          <p>{{ form.Comments.label() }}</p>
+          <p>{{ form.Demand_status.label() }}</p>  
+          <p>Edit</p>
+          <p>Delete</p>
+        </div>
+
+
+       
+
+{% for post in posts %}
+<div class="data">
+          <p class="em2">{{ post.Slno }}</p>
+          <p class="em2">{{ post.Demand_Id }}</p>
+          <p class="em2">{{ post.L5_Manager }}</p>
+          <p class="em2">{{ post.Skill_required }}</p>
+          <p class="em2">{{ post.Experience }}</p>
+          <p class="em2">{{ post.Profile_shared }}</p>
+          <p class="em2">{{ post.Comments }}</p>
+          <p class="em2">{{ post.Demand_status }}</p>   
+          <a class="btn btn-secondary" href="{{ url_for('update',id=post.id) }}">Edit</a>
+         
+        
+        <form class="don" method="POST"
+                action="{{ url_for('delete', del_id=post.id) }}">
+            <input class="input" type="submit" value="Delete"
+                onclick="return confirm('Are you sure you want to delete record Slno={{post.Slno}} from this entry?')">
+        </form>
+          
+        
+</div>
+{% endfor %}
+
+
+
+
+
+{% endblock content %}
